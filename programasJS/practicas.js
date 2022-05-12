@@ -104,3 +104,20 @@ console.log(puedoIrAlBanco2("martes",16));
 /* ------------------------------------------ */
 /* ------------------------------------------ */
 
+/* Escribí la función `esNumeroDeLaSuerte` la cual recibiendo un número, le diga a Mariana si es un número de la suerte. Recuerda que el número debe cumplir con las tres condiciones mencionadas:
+
+1. Tiene que ser un número positivo.
+2. Tiene que ser múltiplo de 2 o de 3
+3. No tiene que ser el número 15
+
+Tu reto adicional será: **NO** usar el `if`. Sólo deberás usar la palabra reservada  `return`  dentro de tu código para generar la expresión. */
+
+function esNumeroDeLaSuerte(n){
+    return (n % 2 == 0 || n % 3 == 0) && n > 0 && n !== 15
+}
+
+console.log(esNumeroDeLaSuerte(10));
+console.log(esNumeroDeLaSuerte(8));
+console.log(esNumeroDeLaSuerte(9));
+console.log(esNumeroDeLaSuerte(5));
+console.log(esNumeroDeLaSuerte(15));
